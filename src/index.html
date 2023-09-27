@@ -10,30 +10,35 @@
     <title>Paulina Kakareko - Portfolio</title>
 </head>
 <body class="font-dmsans">
-    <header>
-        <nav>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Resume</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+ 
     <main>
-        <section>
-            <article>
+        <header>
+            <img class="w-10 h-10" src="./images/star.svg" alt="">
+            <p>Paulina Kakareko</p>
+            <p>IT Analyst</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a download href="#">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <section id="about">
+            
                 <h1>My name is Paulina and I'm an aspiring Frontend developer and a keen Star Wars fan.</h1>
                 <p>You might be interested in checking the list of my skills. Don't forget to have a glimpse at my projects. I'm looking for a new challenges so if you have one - contact me 😃</p>
-                <button>Get in touch</button>
-                <button>Get to know me</button>
-            </article>
-         
+                <a href="#contact">Get in touch</a>
+                <a href="#skills">Get to know me</a>
         </section>
-        <section>
-            <header>
-                <h2>I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do below.</h2>
-            </header>
+        <section id="skills">
+            <h2>MY SKILLS</h2>
+            <p>I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do below.</p>
             <article>
+                <img class="w-44 h-44" src="./images/triangle.svg" alt="">
+                <h3>Working knowledge</h3>
                 <ol>
                     <li>Semantic HTML 5</li>
                     <li>Flexbox</li>
@@ -47,6 +52,8 @@
                 </ol>
             </article>
             <article>
+                <img class="w-44 h-44" src="./images/union.svg" alt="">
+                <h3>Know something about</h3>
                 <ol>
                     <li>Semantic HTML 5</li>
                     <li>Flexbox</li>
@@ -60,6 +67,8 @@
                 </ol>
             </article>
             <article>
+                <img class="w-44 h-44" src="./images/figure.svg" alt="">
+                <h3>Want to learn</h3>
                 <ol>
                     <li>Semantic HTML 5</li>
                     <li>Flexbox</li>
@@ -73,27 +82,57 @@
                 </ol>
             </article>
         </section>
-        <section>
-            <h2>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</h2>
+        <section id="projects">
+            <h2>RECENT PROJECTS</h2>
+            <p>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
+            <article>
+                <h3>simple-editor</h3>
+                <p><img class="w-4 h-4" src="./images/little_star.svg" alt="">27</p>
+                <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+                <a href="#">View demo</a>
+                <a href="#">Source code</a>
+            </article>
         </section>
-        <section>
-            <h2>Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</h2>
-            <div>
+        <section id="after_hours">
+            <h2>AFTER HOURS</h2>
+            <p>Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
+            <article>
+                <img src="./images/music.png" alt="">
                 <h3>Electronic Music</h3>
                 <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
-            </div>
-            <div>
+            </article>      
+            <article>
+                <img src="./images/star_wars.png" alt="">
                 <h3>Star Wars Universum</h3>
-                <p>In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars.</p>
-            </div>
-            <div>
+                <p>In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars.</p> 
+            </article>
+            <article>
+                <img src="./images/gaming.png" alt="">
                 <h3>Video Games</h3>
                 <p>Lost in virtual realms, I find joy and challenge in the dynamic world of video games.</p>
-            </div>
-            <div>
+            </article>
+                <article>
+                    <img src="./images/gym.png" alt="">
                 <h3>Strength Training</h3>
                 <p>Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my limits.</p>
-            </div>
+            </article>
+        </section>
+        <section id="contact">
+<h2>Let's work together</h2>
+<p>I'm open for new opportunities. </br>If you have one for me we should talk!</p>
+<a href="mailto:paulinakakareko1@gmail.com">paulinakakareko1@gmail.com</a>
+<p>or find me on</p>
+<ul>
+    <li>
+        <a href="#"><img class='w-6 h-6s' src="./images/github.svg" alt=""></a>
+        <a href="#"><img src="./images/facebook.svg" alt=""></a>
+    </li>
+</ul>
         </section>
     </main>
     <footer></footer>
