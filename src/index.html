@@ -9,123 +9,133 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
     <title>Paulina Kakareko - Portfolio</title>
 </head>
-<body class="font-dmsans">
- 
-    <main>
-        <header>
-            <img class="w-10 h-10" src="./images/star.svg" alt="">
-            <p>Paulina Kakareko</p>
-            <p>IT Analyst</p>
-            <nav>
-                <ul>
+<body class="font-dmsans bg-bg text-white">
+    <main class="px-4">
+        <header class="max-w-wtf mx-auto py-6 flex justify-between gap-4">
+            <div class="flex gap-4 items-center">
+                <img class="w-10 h-10" src="./images/star.svg" alt="">
+                <div>
+                    <p class="text-accent text-xl font-bold">Paulina Kakareko</p>
+                    <p class="text-white opacity-40 uppercase text-xs tracking-wider">IT Analyst</p>
+                </div>
+            </div>
+          
+            <nav class="hidden md:block">
+                <ul class="flex gap-10 font-bold items-center">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a download href="#">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="flex gap-2 items-center" download href="#"><img src="./images/cv.svg" alt="">Resume</a></li>
+                    <li><a class="inline-block bg-accent text-bg rounded-xl py-3.5 px-8" href="#contact">Contact</a></li>
                 </ul> 
             </nav>
         </header>
-        <section id="about">
-            
-                <h1>My name is Paulina and I'm an aspiring Frontend developer and a keen Star Wars fan.</h1>
-                <p>You might be interested in checking the list of my skills. Don't forget to have a glimpse at my projects. I'm looking for a new challenges so if you have one - contact me 😃</p>
-                <a href="#contact">Get in touch</a>
-                <a href="#skills">Get to know me</a>
+        <section id="about" class="max-w-wtf mx-auto mb-20 md:flex md:justify-between md:gap-12  md:pt-[7.5rem] md:mb-40">
+            <img class='w-full md:w-[26rem] mb-5 md:order-2' src="./images/paulina.png" alt="Paulina Kakareko.">
+            <div class="max-w-3xl">
+                <h1 class="text-2xl font-bold mb-4 md:text-5xl md:leading-snug lg:leading-snug">My name is Paulina and I'm an aspiring <span class="text-accent">Frontend developer</span> and a keen Star Wars fan.</h1>
+                <p class="text-gray-400 mb-8 md:text-2xl font-medium md:mb-16">You might be interested in checking the list of my <a class="text-white" href="#skills">skills</a>. Don't forget to have a glimpse at my <a class="text-white" href="#projects">projects</a>. I'm looking for a new challenges so if you have one - <a class="text-white" href="#contact">contact me</a> 😃</p>
+                <div class="flex gap-4 flex-col items-start md:flex-row">
+                    <a class="text-bg bg-accent flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-[0.625rem] md:py-[0.875rem] md:rounded-[1.25rem] md:px-6 ring-2 ring-accent" href="#contact"><img src="./images/touch.svg" alt="">Get in touch</a>
+                    <a class="bg-bg text-accent flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-[0.625rem] ring-lightGray ring-2 md:py-[0.875rem] md:rounded-[1.25rem] md:px-6" href="#skills"><img src="./images/person.svg" alt="">Get to know me</a>
+                </div>  
+            </div>
+               
         </section>
-        <section id="skills">
-            <h2>MY SKILLS</h2>
-            <p>I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do below.</p>
-            <article>
-                <img class="w-44 h-44" src="./images/triangle.svg" alt="">
-                <h3>Working knowledge</h3>
-                <ol>
-                    <li>Semantic HTML 5</li>
-                    <li>Flexbox</li>
-                    <li>Markdown</li>
-                    <li>JS: Local storage</li>
-                    <li>Figma</li>
-                    <li>CSS Grid</li>
-                    <li>Forms</li>
-                    <li>JS: DOM manipulations</li>
-                    <li>SASS</li>
-                </ol>
-            </article>
-            <article>
-                <img class="w-44 h-44" src="./images/union.svg" alt="">
-                <h3>Know something about</h3>
-                <ol>
-                    <li>Semantic HTML 5</li>
-                    <li>Flexbox</li>
-                    <li>Markdown</li>
-                    <li>JS: Local storage</li>
-                    <li>Figma</li>
-                    <li>CSS Grid</li>
-                    <li>Forms</li>
-                    <li>JS: DOM manipulations</li>
-                    <li>SASS</li>
-                </ol>
-            </article>
-            <article>
-                <img class="w-44 h-44" src="./images/figure.svg" alt="">
-                <h3>Want to learn</h3>
-                <ol>
-                    <li>Semantic HTML 5</li>
-                    <li>Flexbox</li>
-                    <li>Markdown</li>
-                    <li>JS: Local storage</li>
-                    <li>Figma</li>
-                    <li>CSS Grid</li>
-                    <li>Forms</li>
-                    <li>JS: DOM manipulations</li>
-                    <li>SASS</li>
-                </ol>
-            </article>
-        </section>
-        <section id="projects">
-            <h2>RECENT PROJECTS</h2>
-            <p>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
-            <article>
-                <h3>simple-editor</h3>
-                <p><img class="w-4 h-4" src="./images/little_star.svg" alt="">27</p>
-                <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
+
+
+
+        <section id="skills" class="max-w-wtf mx-auto mb-32 md:mb-40">
+            <h2 class="text-lighterGray font-bold text-xl md:tracking-wider mb-4" >MY SKILLS</h2>
+            <p class="text-2xl md:text-4xl md:max-w-3xl font-medium mb-10 tracking-wide md:mb-20">I've picked up some cool skills along the way, and I'm excited to share them with you. <br/>Check out what I can do below.</p>
+            <div class="grid gap-4 md:grid-cols-3">
+            <article class="bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight ring ring-bg rounded-[0.625rem] p-5 md:p-6 lg:p-10">
+                <img class="w-44 h-44 mb-10 md:mb-20" src="./images/triangle.svg" alt="">
+                <h3 class="border-accent border-t-2 pt-3 md:pt-3.5 tracking-tight text-2xl font-bold mb-3">Working knowledge</h3>
+                <ul class="text-sm font-medium tracking-tight space-y-2">
+                    <li>- Semantic HTML 5</li>
+                    <li>- Flexbox</li>
+                    <li>- Markdown</li>
+                    <li>- JS: Local storage</li>
+                    <li>- Figma</li>
+                    <li>- CSS Grid</li>
+                    <li>- Forms</li>
+                    <li>- JS: DOM manipulations</li>
+                    <li>- SASS</li>
                 </ul>
-                <a href="#">View demo</a>
-                <a href="#">Source code</a>
             </article>
+            <article class="bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight ring ring-bg rounded-[0.625rem]  p-5 md:p-6 lg:p-10">
+                <img class="w-44 h-44 mb-10 md:mb-20" src="./images/union.svg" alt="">
+                <h3 class="border-accent border-t-2 pt-3 md:pt-3.5 tracking-tight text-2xl font-bold mb-3">Know something about</h3>
+                <ul class="text-sm font-medium tracking-tight space-y-2">
+                    <li>- Semantic HTML 5</li>
+                    <li>- Flexbox</li>
+                    <li>- Markdown</li>
+                    <li>- JS: Local storage</li>
+                    <li>- Figma</li>
+                    <li>- CSS Grid</li>
+                    <li>- Forms</li>
+                    <li>- JS: DOM manipulations</li>
+                    <li>- SASS</li>
+                </ul>
+            </article>
+            <article class="bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight ring ring-bg rounded-[0.625rem]  p-5 md:p-6 lg:p-10">
+                <img class="w-44 h-44 mb-10 md:mb-20" src="./images/figure.svg" alt="">
+                <h3 class="border-accent border-t-2 pt-3 md:pt-3.5 tracking-tight text-2xl font-bold mb-3">Want to learn</h3>
+                <ul class="text-sm font-medium tracking-tight space-y-2">
+                    <li>- Semantic HTML 5</li>
+                    <li>- Flexbox</li>
+                    <li>- Markdown</li>
+                    <li>- JS: Local storage</li>
+                    <li>- Figma</li>
+                    <li>- CSS Grid</li>
+                    <li>- Forms</li>
+                    <li>- JS: DOM manipulations</li>
+                    <li>- SASS</li>
+                </ul>
+            </article>
+        </div>
         </section>
-        <section id="after_hours">
-            <h2>AFTER HOURS</h2>
-            <p>Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
+        <section id="projects" class="max-w-wtf mx-auto mb-32 md:mb-40">
+            <h2 class="text-lighterGray font-bold text-xl md:tracking-wider mb-4" >RECENT PROJECTS</h2>
+            <p class="text-2xl md:text-4xl md:max-w-3xl font-medium mb-10 md:mb-20 tracking-wide ">Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
+           <div class="grid gap-4 md:grid-cols-2 projects--js">
+           </div>
+           
+        </section>
+        <section id="after_hours" class="max-w-wtf mx-auto mb-32 md:mb-40">
+            <h2 class="text-lighterGray font-bold text-xl md:tracking-wider mb-4" >AFTER HOURS</h2>
+            <p class="text-2xl md:text-4xl md:max-w-3xl font-medium mb-10 md:mb-20 tracking-wide">Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
+            <div class="grid gap-16 md:gap-8 lg:gap-4 md:grid-cols-2 lg:grid-cols-4">
             <article>
-                <img src="./images/music.png" alt="">
-                <h3>Electronic Music</h3>
-                <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
+                <img src="./images/music.png" class="mb-6 w-full" alt="">
+                <h3 class="text-2xl font-bold tracking-tight mb-1">Electronic Music</h3>
+                <p class="text-gray-400">Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
             </article>      
             <article>
-                <img src="./images/star_wars.png" alt="">
-                <h3>Star Wars Universum</h3>
-                <p>In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars.</p> 
+                <img src="./images/star_wars.png" class="mb-6 w-full" alt="">
+                <h3 class="text-2xl font-bold tracking-tight mb-1">Star Wars Universum</h3>
+                <p class="text-gray-400">In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars.</p> 
             </article>
             <article>
-                <img src="./images/gaming.png" alt="">
-                <h3>Video Games</h3>
-                <p>Lost in virtual realms, I find joy and challenge in the dynamic world of video games.</p>
+                <img src="./images/gaming.png" class="mb-6 w-full" alt="">
+                <h3 class="text-2xl font-bold tracking-tight mb-1">Video Games</h3>
+                <p class="text-gray-400">Lost in virtual realms, I find joy and challenge in the dynamic world of video games.</p>
             </article>
                 <article>
-                    <img src="./images/gym.png" alt="">
-                <h3>Strength Training</h3>
-                <p>Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my limits.</p>
+                    <img src="./images/gym.png" class="mb-6 w-full" alt="">
+                <h3 class="text-2xl font-bold tracking-tight mb-1">Strength Training</h3>
+                <p class="text-gray-400">Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my limits.</p>
             </article>
+        </div>
         </section>
-        <section id="contact">
-<h2>Let's work together</h2>
-<p>I'm open for new opportunities. </br>If you have one for me we should talk!</p>
-<a href="mailto:paulinakakareko1@gmail.com">paulinakakareko1@gmail.com</a>
+
+
+
+        <section id="contact" class="max-w-wtf mx-auto flex flex-col items-center">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight text-center mb-4">Let's work together</h2>
+<p class="text-center text-gray-400 mb-10">I'm open for new opportunities. </br>If you have one for me we should talk!</p>
+<a class="text-bg bg-accent flex gap-3 font-bold text-xl md:text-2xl py-2 px-4 items-center rounded-[0.625rem] md:py-[0.875rem] md:rounded-[1.25rem] md:px-6 ring-2 ring-accent" href="mailto:email@email.com">paulinakakareko1@gmail.com</a>
 <p>or find me on</p>
 <ul>
     <li>
