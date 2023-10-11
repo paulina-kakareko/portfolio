@@ -31,16 +31,16 @@ fetch('https://api.github.com/users/paulina-kakareko/repos?direction=desc')
                 <p class="bg-gray-400/10 py-1 px-2 rounded flex gap-0.5 items-center text-gray-400 font-medium leading-none"><img class="w-4 h-4" src="${smallStar}" alt="">${stargazers_count}</p>
             </header>
         <p class="text-gray-400 text-xl mb-4">${description}</p>
-        <ul class="flex gap-2 mb-10">
+        <ul class="flex gap-2 mb-10 flex-wrap">
        ${tags}
         </ul>
         <div class='flex gap-4 flex-col md:flex-row items-start'>
-            <a target="_blank" rel="noreferrer nofollow" class='bg-bg text-accent flex gap-2 font-bold  py-4 px-5 rounded-[0.625rem] ring-lightGray ring-2 md:text-xl' href="${homepage}"><img class='w-6 h-6' src="${image1}" alt="">View demo</a>
-            <a target="_blank" rel="noreferrer nofollow" class='bg-bg text-accent flex gap-2 font-bold  py-4 px-5 rounded-[0.625rem] ring-lightGray ring-2 md:text-xl' href="${html_url}"><img class='w-6 h-6' src="${image2}" alt="">Source code</a>
+            <a target="_blank" rel="noreferrer nofollow" class='bg-bg text-white flex gap-2 font-bold  py-4 px-5 rounded-[0.625rem] ring-lightGray ring-2 md:text-xl' href="${homepage}"><img class='w-6 h-6' src="${image1}" alt="">View demo</a>
+            <a target="_blank" rel="noreferrer nofollow" class='bg-bg text-white flex gap-2 font-bold  py-4 px-5 rounded-[0.625rem] ring-lightGray ring-2 md:text-xl' href="${html_url}"><img class='w-6 h-6' src="${image2}" alt="">Source code</a>
         </div>
     </div>
     </article>`;
-    if (homepage)
+   if (homepage)
         projectsContainer.insertAdjacentHTML('afterbegin', element)
     }
 })

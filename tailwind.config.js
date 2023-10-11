@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: { colors: {
       'bg': '#020916',
-      'accent': '#CEFF7E',
+      'accent': {DEFAULT: '#F1B4BB', 500: '#e7848f'},
       'lightGray': "#1F2937",
       'lighterGray': '#9CA3AF'
     },
@@ -17,7 +17,8 @@ module.exports = {
       'wtf': '82rem'
     },
     boxShadow: {
-      'innerlight': 'inset 0 2px 0 0 rgba(255,255,255,0.15)'
+      'innerlight': 'inset 0 2px 0 0 rgba(255,255,255,0.15)',
+      'innerlightmini': 'inset 0 1px 0 0 rgba(255,255,255,0.15)'
     }
   },
   },
