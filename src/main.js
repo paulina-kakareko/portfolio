@@ -15,6 +15,7 @@ fetch('https://api.github.com/users/paulina-kakareko/repos?direction=desc')
 .then(response => {
     for (let repository of response) {
         const {name, html_url, description, stargazers_count, topics, homepage} = repository;
+        let tag;
         let tags = ``;
         for (tag of topics) {
             tags += `<li class="bg-gray-400/10 py-2 px-2 rounded text-sm font-bold">${tag}</li>`
